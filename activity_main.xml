@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView android:text="CANDLE SIGNAL SCANNER" android:textSize="24sp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="তোমার দেওয়া বইয়ের pattern rules ধরে screen chart scan" android:textSize="15sp" android:layout_marginTop="6dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/scanButton" android:text="📷  স্ক্রিন SCAN করুন" android:textSize="18sp" android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="56dp"/>
+<TextView android:id="@+id/status" android:text="প্রস্তুত — SCAN চাপুন" android:textSize="16sp" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="PATTERN" android:textStyle="bold" android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/pattern" android:text="—" android:textSize="22sp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="SIGNAL" android:textStyle="bold" android:layout_marginTop="14dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/signal" android:text="WAIT" android:textSize="30sp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/confidence" android:text="Confidence: —" android:textSize="15sp" android:layout_marginTop="6dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="DETAILS" android:textStyle="bold" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/details" android:text="স্ক্যান করলে ফলাফল এখানে আসবে।" android:textSize="16sp" android:lineSpacingExtra="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="\n⚠️ এটি বইভিত্তিক rule analysis; নিশ্চিত profit বা ভবিষ্যৎ price prediction নয়। Complex chart-pattern detection আনুমানিক।" android:textSize="13sp" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>
