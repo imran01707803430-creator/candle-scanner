@@ -1,6 +1,7 @@
 name: Build Android APK
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
 
@@ -18,11 +19,11 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v3
 
-    - name: Build APK with Gradle
-      run: ./gradlew assembleDebug
+    - name: Build with Gradle
+      run: gradle assembleDebug
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
